@@ -1,0 +1,8 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  DevBackendQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: dev-queue-1
+      SqsManagedSseEnabled: false
